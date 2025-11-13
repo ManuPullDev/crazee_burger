@@ -21,6 +21,7 @@ function App() {
         </a>
       </div>
       <h1>Salut, Emmanuel comment vas-tu ?</h1>
+      <h1>TheMoon BSTEC</h1>
       <div className="card">
         <button onClick={handleClick}>
           count is {count}
