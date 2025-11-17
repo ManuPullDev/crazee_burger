@@ -1,5 +1,3 @@
-
-
 import { useState } from 'react'
 
 const LoginForm = () => {
@@ -9,29 +7,25 @@ const LoginForm = () => {
         alert(`Bonjour ${input}`)
         e.preventDefault();
         setInput("")
-     };
-     
-     const handleChange = (e) => { 
+    };
+
+    const handleChange = (e) => {
         setInput(e.target.value)
-     }
-  return (
-    <div>
-        <div>
+    }
+    return (
+        <form action="submit" onSubmit={handleSubmit}>
             <h2>Bienvenue  chez nous</h2>
             <p>Connectez-vous</p>
-        </div>
-        <form action="submit" onSubmit={handleSubmit}>
-            <input 
-            type="text"
-            placeholder='Entrez votre prenom'
-            required
-            value={input}
-            onChange={handleChange}
+            <input
+                type="text"
+                placeholder='Entrez votre prenom'
+                required
+                value={input}
+                onChange={handleChange}
             />
-        <button>Acceder a votre espace</button>
+            <button>Acceder a votre espace</button>
         </form>
-    </div>
-  )
+    )
 }
 
 export default LoginForm

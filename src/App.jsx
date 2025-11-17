@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import LoginForm from './components/LoginForm'
+import LoginPage from './components/LoginPage'
 
 function App() {
   
 
   return (
     <>
-      <h1>Features</h1>
-      <LoginForm/>
+      <LoginPage/>
     </>
   )
 }
