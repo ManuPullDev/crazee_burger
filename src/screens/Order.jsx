@@ -1,13 +1,12 @@
-import { Link, useLocation } from "react-router"
-import LoginForm from "../components/LoginForm"
+import { Link, useParams } from "react-router"
 
 const OrderPage = () => {
-    const { state } = useLocation();
+    const { id } = useParams();
 
   return (
     <div>
         <h1>Order Page</h1>
-        <p>Bonjour {state?.input} </p>
+        <p>Bonjour {id} </p>
         <Link to={"/"} >
             <button>Deconnexion</button>
         </Link>
