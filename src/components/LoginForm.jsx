@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const LoginForm = () => {
-    const [input, setInput] = useState("")
+    const [input, setInput] = useState("");
 
     const handleSubmit = (e) => {
         alert(`Bonjour ${input}`)
