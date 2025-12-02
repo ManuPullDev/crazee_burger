@@ -1,11 +1,16 @@
+import { Route, Routes } from 'react-router'
 import './App.css'
-import LoginPage from './components/LoginPage'
+import LoginPage from './screens/LoginPage'
+import OrderPage from './screens/Order'
+import ErrorPage from './components/ErrorPage'
 
 function App() {
   return (
-    <>
-      <LoginPage/>
-    </>
+    <Routes>
+      <Route path='/' element={<LoginPage />} />
+      <Route path='/order/:id' element={<OrderPage />} />
+      <Route path='*' element={<ErrorPage />} />
+    </Routes>
   )
 }
 
